@@ -1,0 +1,258 @@
+{
+  "bones": [
+    {
+      "id": "bone_femur_left",
+      "name": "Femur",
+      "common_name": "Thigh Bone",
+      "description": "The femur is the longest and strongest bone in the human body, extending from the hip to the knee.",
+      "biomechanical_function": "The femur acts as a Class 3 lever system. During walking, the hip joint serves as the fulcrum, the muscles (gluteus maximus, quadriceps) provide the effort, and the weight of the body is the load. This bone can withstand forces up to 1,800-2,500 pounds of pressure.",
+      "svg_path_id": "bone_femur_left",
+      "articulates_with": ["bone_pelvis", "bone_tibia_left", "bone_patella_left"],
+      "position_data": {
+        "x": 347,
+        "y": 700,
+        "labelOffset": {
+          "x": -50,
+          "y": 0
+        }
+      },
+      "fun_fact": "The femur is so strong that it can support 30 times the weight of an adult's body. That's like supporting a small car!",
+      "reference_sources": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK557443/",
+        "Gray's Anatomy for Students, 4th Edition"
+      ],
+      "created_at": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": "bone_humerus_left",
+      "name": "Humerus",
+      "common_name": "Upper Arm Bone",
+      "description": "The humerus is the long bone in the upper arm that runs from the shoulder to the elbow.",
+      "biomechanical_function": "Functions as the rigid arm of a lever in a Class 3 lever system. The elbow joint is the fulcrum, the biceps provides effort closer to the fulcrum than the load (hand/object), allowing for greater speed and range of motion at the cost of mechanical advantage.",
+      "svg_path_id": "bone_humerus_left",
+      "articulates_with": ["bone_scapula", "bone_radius_left", "bone_ulna_left"],
+      "position_data": {
+        "x": 265,
+        "y": 275,
+        "labelOffset": {
+          "x": -60,
+          "y": 0
+        }
+      },
+      "fun_fact": "The funny bone isn't actually a bone—it's the ulnar nerve running along the humerus. When you hit it, you're compressing the nerve against the bone!",
+      "reference_sources": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK554406/"
+      ],
+      "created_at": "2024-01-01T00:00:00Z"
+    }
+  ],
+  "muscles": [
+    {
+      "id": "muscle_biceps_brachii_left",
+      "name": "Biceps Brachii",
+      "common_name": "Bicep",
+      "description": "The biceps brachii is a two-headed muscle on the front of the upper arm, known for its distinctive bulge when flexed.",
+      "biomechanical_function": "Operates as the effort force in a Class 3 lever system. When contracted, it pulls the radius (forearm bone) upward, rotating around the elbow joint (fulcrum). This configuration sacrifices mechanical advantage for speed—you can move your hand quickly through a large arc, though lifting heavy weights requires more muscle force than the weight itself.",
+      "svg_path_id": "muscle_biceps_left",
+      "origin_bone_id": "bone_scapula",
+      "insertion_bone_id": "bone_radius_left",
+      "nerve_supply_id": "nerve_musculocutaneous",
+      "muscle_group": "Anterior Upper Arm",
+      "action": "Primary: Elbow flexion (bending arm). Secondary: Forearm supination (rotating palm upward), weak shoulder flexion.",
+      "position_data": {
+        "x": 265,
+        "y": 260,
+        "labelOffset": {
+          "x": -55,
+          "y": 0
+        }
+      },
+      "fun_fact": "The biceps gets its name from 'bi' (two) and 'ceps' (heads)—it has two attachment points at the shoulder. There's also a triceps (three heads) on the back of your arm!",
+      "reference_sources": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK519538/",
+        "Kinesiology of the Musculoskeletal System, 3rd Edition"
+      ],
+      "created_at": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": "muscle_quadriceps_femoris_left",
+      "name": "Quadriceps Femoris",
+      "common_name": "Quads",
+      "description": "The quadriceps femoris is a large muscle group on the front of the thigh, consisting of four separate muscles working together.",
+      "biomechanical_function": "Functions as a powerful pulley and lever system. During activities like jumping or standing from a chair, it extends the knee joint. The patella (kneecap) acts as a pulley, increasing the mechanical advantage by changing the angle of force application—making the muscle ~50% more efficient.",
+      "svg_path_id": "muscle_quadriceps_left",
+      "origin_bone_id": "bone_femur_left",
+      "insertion_bone_id": "bone_tibia_left",
+      "nerve_supply_id": "nerve_femoral_left",
+      "muscle_group": "Anterior Thigh",
+      "action": "Primary: Knee extension (straightening leg). Also assists with hip flexion and stabilizing the patella during movement.",
+      "position_data": {
+        "x": 347,
+        "y": 700,
+        "labelOffset": {
+          "x": -50,
+          "y": 0
+        }
+      },
+      "fun_fact": "The quadriceps is one of the strongest muscle groups in the body. Elite athletes can generate forces exceeding 2,000 pounds during maximum contraction!",
+      "reference_sources": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK513334/"
+      ],
+      "created_at": "2024-01-01T00:00:00Z"
+    }
+  ],
+  "nerves": [
+    {
+      "id": "nerve_musculocutaneous",
+      "name": "Musculocutaneous Nerve",
+      "description": "A major nerve of the upper limb that supplies the muscles on the front of the arm.",
+      "biomechanical_function": "Acts as the electrical wiring that powers the biceps and other arm flexors. Carries motor signals from the spinal cord (C5-C7) at ~70-80 meters/second—faster than a race car! Also returns sensory feedback about arm position (proprioception) back to the brain for precise movement control.",
+      "svg_path_id": "nerve_musculocutaneous",
+      "origin_point": "Brachial Plexus (C5-C7 spinal nerves)",
+      "innervates": ["muscle_biceps_brachii_left", "muscle_brachialis_left", "muscle_coracobrachialis_left"],
+      "position_data": {
+        "x": 265,
+        "y": 240,
+        "labelOffset": {
+          "x": -70,
+          "y": -20
+        }
+      },
+      "reference_sources": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK536996/"
+      ],
+      "created_at": "2024-01-01T00:00:00Z"
+    },
+    {
+      "id": "nerve_femoral_left",
+      "name": "Femoral Nerve",
+      "description": "The largest nerve of the lumbar plexus, responsible for leg function and sensation.",
+      "biomechanical_function": "Serves as the main power cable for the quadriceps muscles. Transmits high-frequency electrical signals (action potentials) to coordinate the firing of thousands of muscle fibers simultaneously. Also provides sensory feedback from the knee and thigh—essential for maintaining balance and detecting position without looking at your legs.",
+      "svg_path_id": "nerve_femoral_left",
+      "origin_point": "Lumbar Plexus (L2-L4 spinal nerves)",
+      "innervates": ["muscle_quadriceps_femoris_left", "muscle_sartorius_left", "muscle_pectineus_left"],
+      "position_data": {
+        "x": 347,
+        "y": 620,
+        "labelOffset": {
+          "x": -55,
+          "y": -10
+        }
+      },
+      "reference_sources": [
+        "https://www.ncbi.nlm.nih.gov/books/NBK482431/"
+      ],
+      "created_at": "2024-01-01T00:00:00Z"
+    }
+  ],
+  "systems": [
+    {
+      "id": "system_skeletal",
+      "name": "Skeletal System",
+      "layer_order": 1,
+      "unlock_requirement": null,
+      "color_theme": "#E8E8E8",
+      "description": "The structural framework of the body—206 bones acting as levers, supports, and protective cages."
+    },
+    {
+      "id": "system_nervous",
+      "name": "Nervous System",
+      "layer_order": 2,
+      "unlock_requirement": "skeletal_quiz_passed",
+      "color_theme": "#FFB300",
+      "description": "The body's electrical wiring system—billions of neurons transmitting signals at incredible speeds."
+    },
+    {
+      "id": "system_muscular",
+      "name": "Muscular System",
+      "layer_order": 3,
+      "unlock_requirement": "muscular_quiz_passed",
+      "color_theme": "#D32F2F",
+      "description": "Over 600 muscles providing the force to move bones like motors in a machine."
+    },
+    {
+      "id": "system_integumentary",
+      "name": "Integumentary System",
+      "layer_order": 4,
+      "unlock_requirement": "nervous_quiz_passed",
+      "color_theme": "#FFDBAC",
+      "description": "The skin—the body's largest organ and protective outer shell."
+    }
+  ],
+  "quiz_questions": [
+    {
+      "id": "skeletal_q1",
+      "system_name": "Skeletal System",
+      "question_type": "click_to_identify",
+      "question_text": "Click on the Femur (Thigh Bone)",
+      "correct_answer_id": "bone_femur_left",
+      "options": null,
+      "difficulty": 1,
+      "explanation": "The femur is the longest and strongest bone in your body, running from your hip to your knee. It's designed to withstand massive forces during walking and running."
+    },
+    {
+      "id": "skeletal_q2",
+      "system_name": "Skeletal System",
+      "question_type": "multiple_choice",
+      "question_text": "What mechanical function does the femur serve?",
+      "correct_answer_id": "lever_system",
+      "options": [
+        {
+          "id": "lever_system",
+          "text": "It acts as a Class 3 lever for efficient movement"
+        },
+        {
+          "id": "spring",
+          "text": "It acts as a spring to absorb impact"
+        },
+        {
+          "id": "pulley",
+          "text": "It acts as a pulley to redirect muscle force"
+        },
+        {
+          "id": "hinge",
+          "text": "It acts purely as a rotating hinge"
+        }
+      ],
+      "difficulty": 2,
+      "explanation": "The femur works as a Class 3 lever system where the hip joint is the fulcrum, muscles provide effort, and body weight is the load. This design prioritizes speed and range of motion."
+    },
+    {
+      "id": "muscular_q1",
+      "system_name": "Muscular System",
+      "question_type": "click_to_identify",
+      "question_text": "Click on the Biceps muscle",
+      "correct_answer_id": "muscle_biceps_left",
+      "options": null,
+      "difficulty": 1,
+      "explanation": "The biceps brachii is the prominent muscle on the front of your upper arm, responsible for bending your elbow and rotating your forearm."
+    },
+    {
+      "id": "muscular_q2",
+      "system_name": "Muscular System",
+      "question_type": "connection_match",
+      "question_text": "The biceps muscle inserts (attaches to) which bone?",
+      "correct_answer_id": "bone_radius_left",
+      "options": [
+        {
+          "id": "bone_radius_left",
+          "text": "Radius (Forearm)"
+        },
+        {
+          "id": "bone_humerus_left",
+          "text": "Humerus (Upper Arm)"
+        },
+        {
+          "id": "bone_scapula",
+          "text": "Scapula (Shoulder Blade)"
+        },
+        {
+          "id": "bone_ulna_left",
+          "text": "Ulna (Forearm)"
+        }
+      ],
+      "difficulty": 2,
+      "explanation": "The biceps inserts on the radius bone of the forearm. When it contracts, it pulls the radius upward, bending your elbow. It originates at the scapula (shoulder blade)."
+    }
+  ]
+}
